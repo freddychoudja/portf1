@@ -431,6 +431,35 @@ h2 {
     color: var(--text);
 }
 
+.github-activity {
+    margin-top: 40px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    text-align: center;
+}
+
+.github-activity-label {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin: 0 0 20px 0;
+}
+
+.github-activity-label span {
+    color: var(--accent);
+}
+
+.github-chart-wrapper {
+    overflow-x: auto;
+}
+
+.github-chart {
+    max-width: 100%;
+    height: auto;
+}
+
 /*
  * =========================================
  *  COMPÉTENCES
