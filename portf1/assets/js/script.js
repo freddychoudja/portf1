@@ -94,7 +94,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in-section').forEach(section => {
-        observer.observe(section);
+    document.querySelectorAll('.fade-in-section, .skill-card, .certification-card, .project-item').forEach(el => {
+        observer.observe(el);
     });
+
+    // ===================================
+    // Halo qui suit le curseur sur les cartes
+    // ===================================
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!prefersReducedMotion) {
+        document.querySelectorAll('.skill-card, .certification-card, .project-item').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty('--mx', `${((e.clientX - rect.left) / rect.width) * 100}%`);
+                card.style.setProperty('--my', `${((e.clientY - rect.top) / rect.height) * 100}%`);
+            });
+        });
+
+        // ===================================
+        // Effet "magnétique" sur les boutons du hero
+        // ===================================
+        document.querySelectorAll('.hero-buttons .btn').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.25;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.35;
+                btn.style.transform = `translate(${x}px, ${y}px)`;
+            });
+
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+            });
+        });
+    }
 });
