@@ -8,44 +8,44 @@
     <meta name="author" content="Freddy Choudja">
     <title>Freddy Choudja - Architecte de Solutions Numériques</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Favicon personnalisé "FC" -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2300aaff'%3E%3C/rect%3E%3Ctext x='50' y='50' font-size='50' fill='white' text-anchor='middle' dy='.35em' font-family='Arial, sans-serif'%3EFC%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236366f1'%3E%3C/rect%3E%3Ctext x='50' y='50' font-size='46' fill='white' text-anchor='middle' dy='.35em' font-family='Arial, sans-serif' font-weight='700'%3EFC%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-    <div id="particles-js"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
 
     <nav>
-        <!-- Logo Initiales -->
-        <div class="logo">
-            <a href="#hero" aria-label="Retour à l'accueil">FC</a>
-        </div>
-        <ul>
-            <li><a href="#hero">Accueil</a></li>
-            <li><a href="#about">À Propos</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#album">Album</a></li>
-        </ul>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="icon-slider">
-                    <!-- Icônes Lune et Soleil -->
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13.14...Z"/></svg>
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,9A3,3,0,0...Z"/></svg>
-                </div>
-            </label>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#hero" aria-label="Retour à l'accueil">
+                    <span class="logo-mark">FC</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-sm nav-cta">Me contacter</a>
         </div>
     </nav>
 
     <header id="hero" class="hero fade-in-section">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="badge">
+            <span class="badge-dot"></span>
+            Disponible pour des missions freelance
+        </div>
         <h1>Freddy Choudja</h1>
-        <p class="subtitle">Architecte de Solutions Numériques | Entrepreneur Tech</p>
-        <p>Je conçois des écosystèmes web, blockchain Massah🙆🏽‍♂️ !!! pour catalyser l'innovation durable dans le monde.</p>
+        <p class="subtitle">Architecte de Solutions Numériques <span class="dot-sep">·</span> Entrepreneur Tech</p>
+        <p class="hero-desc">Je conçois des écosystèmes web et blockchain sur Massa pour catalyser une innovation numérique durable, du Cameroun au reste du monde.</p>
         <div class="hero-buttons">
             <a href="#projects" class="btn">Explorer mes réalisations</a>
             <a href="#contact" class="btn btn-secondary">Discutons de votre idée</a>
@@ -55,6 +55,7 @@
     <main>
         <section id="about" class="fade-in-section">
             <div class="container">
+                <p class="kicker">À propos</p>
                 <h2>Mon Parcours, Ma Vision</h2>
                 <div class="about-content">
                     <img src="assets/images/fred.jpg" alt="Photo de profil de Freddy Choudja">
@@ -66,26 +67,26 @@
             </div>
         </section>
 
-        <!-- NOUVELLE SECTION COMPÉTENCES -->
         <section id="skills" class="fade-in-section">
             <div class="container">
+                <p class="kicker">Expertise</p>
                 <h2>Mes Pôles d'Expertise</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Développement Web</h3>
-                        <p>Création d'applications natives cross-platform, performantes et fluides.</p>
+                        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Développement Mobile</h3>
+                        <p>Création d'applications cross-platform natives, performantes et fluides avec Flutter.</p>
                     </div>
                     <div class="skill-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Marketing digitale</h3>
-                        <p>promouvoir l'identite virtuelle des entreprises et entrepreneurs.</p>
+                        <div class="skill-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Marketing Digital</h3>
+                        <p>Promouvoir l'identité numérique des entreprises et entrepreneurs.</p>
                     </div>
                     <div class="skill-card">
-                        <i class="fas fa-cubes"></i>
-                        <h3>Blockchain & Web3</h3>
+                        <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                        <h3>Blockchain &amp; Web3</h3>
                         <p>Conception d'applications décentralisées (dApps) pour plus de transparence et de sécurité.</p>
-                        <span><strong>Écosystème :</strong> Massa, Smart Contracts</span>
+                        <span class="skill-tag"><strong>Écosystème :</strong> Massa, Smart Contracts</span>
                     </div>
                 </div>
             </div>
@@ -93,25 +94,26 @@
 
         <section id="certifications" class="fade-in-section">
             <div class="container">
+                <p class="kicker">Formation</p>
                 <h2>Mes Certifications</h2>
                 <div class="certifications-grid">
                     <div class="certification-card">
                         <div class="certification-header">
                             <i class="fas fa-award"></i>
-                            <h3>Marketing digitale</h3>
+                            <h3>Marketing Digital</h3>
                         </div>
-                        <p>Une formation intensive couvrant les fondamentaux du Marketing, proposer ar Adobe & meta.</p>
-                        <span class="certification-issuer">Délivré par coursera</span>
-                        <a href="#" class="btn-certification" target="_blank" rel="noopener noreferrer">Voir le certificat</a>
+                        <p>Une formation intensive couvrant les fondamentaux du marketing digital, proposée par Adobe &amp; Meta.</p>
+                        <span class="certification-issuer">Délivré par Coursera</span>
+                        <a href="#" class="btn-certification" target="_blank" rel="noopener noreferrer">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <div class="certification-card">
                         <div class="certification-header">
                             <i class="fas fa-award"></i>
                             <h3>Certification Développeur Web</h3>
                         </div>
-                        <p>Programme complet sur la création d'applications web modernes avec React, Node.js, laravel, bootstrap... </p>
-                        <span class="certification-issuer">Délivré par coursera</span>
-                        <a href="#" class="btn-certification" target="_blank" rel="noopener noreferrer">Voir le certificat</a>
+                        <p>Programme complet sur la création d'applications web modernes avec React, Node.js, Laravel et Bootstrap.</p>
+                        <span class="certification-issuer">Délivré par Coursera</span>
+                        <a href="#" class="btn-certification" target="_blank" rel="noopener noreferrer">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -119,31 +121,35 @@
 
         <section id="projects" class="fade-in-section">
             <div class="container">
+                <p class="kicker">Réalisations</p>
                 <h2>Projets d'Impact</h2>
                 <p class="section-subtitle">Quelques exemples de solutions que j'ai contribué à bâtir.</p>
                 <div class="project-list">
                     <div class="project-item">
-                        <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=EduLink" alt="Projet EduLink Mobile App">
+                        <div class="project-visual visual-green"><i class="fas fa-seedling"></i></div>
                         <div class="project-info">
-                            <h3>Agriclim </h3>
-                            <p>Une application Web connectant les acteur du secteur agricolte au Cameroun, offrant un accès simplifié au marche et aux ressources pour optimiser les recolte. </p>
-                            <a href="#project-detail-1" class="btn project-detail-trigger">Voir les détails</a>
+                            <span class="project-tag">Application Web</span>
+                            <h3>AgriClim</h3>
+                            <p>Une application web connectant les acteurs du secteur agricole au Cameroun, offrant un accès simplifié au marché et aux ressources pour optimiser les récoltes.</p>
+                            <a href="#project-detail-1" class="btn-link project-detail-trigger">Voir les détails <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="project-item">
-                        <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=KudiPay" alt="Projet KudiPay Web App">
+                        <div class="project-visual visual-blue"><i class="fas fa-file-invoice"></i></div>
                         <div class="project-info">
+                            <span class="project-tag">Application Web</span>
                             <h3>Genbook</h3>
-                            <p>Une interface web  pour  permettant aux entrepreneurs de gérer leur livre et document de maniere intuitive.</p>
-                             <a href="#project-detail-2" class="btn project-detail-trigger">Voir les détails</a>
+                            <p>Une interface web permettant aux entrepreneurs de gérer leurs livres et documents de manière intuitive.</p>
+                            <a href="#project-detail-2" class="btn-link project-detail-trigger">Voir les détails <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="project-item">
-                        <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=MassaVote" alt="Projet MassaVote Blockchain">
+                        <div class="project-visual visual-purple"><i class="fas fa-square-poll-vertical"></i></div>
                         <div class="project-info">
-                            <h3>MassaVote - Solution de Vote Décentralisé</h3>
-                            <p>Un prototype de système de vote sécurisé et transparent, bâti sur la blockchain Massah🙆🏽‍♂️ !!!. Une exploration du potentiel du Web3 pour la gouvernance locale.</p>
-                            <a href="#project-detail-3" class="btn project-detail-trigger">Voir les détails</a>
+                            <span class="project-tag">Blockchain / Web3</span>
+                            <h3>MassaVote</h3>
+                            <p>Un prototype de système de vote sécurisé et transparent, bâti sur la blockchain Massa. Une exploration du potentiel du Web3 pour la gouvernance locale.</p>
+                            <a href="#project-detail-3" class="btn-link project-detail-trigger">Voir les détails <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -152,9 +158,10 @@
 
         <section id="contact" class="fade-in-section">
             <div class="container">
+                <p class="kicker">Contact</p>
                 <h2>Prêt à construire le futur ?</h2>
-                <p style="text-align: center; margin-bottom: 30px;">Que ce soit pour une collaboration, un projet ambitieux ou simplement pour échanger, je suis à votre écoute.</p>
-                <form id="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+                <p class="section-subtitle">Que ce soit pour une collaboration, un projet ambitieux ou simplement pour échanger, je suis à votre écoute.</p>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
                     <div class="form-group">
                         <input type="text" id="name" name="name" required placeholder="Votre Nom">
                     </div>
@@ -171,39 +178,41 @@
     </main>
 
     <!-- Modals pour les détails des projets -->
-    <div id="project-detail-1" class="project-detail-modal" style="display:none;">
+    <div id="project-detail-1" class="project-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-1" style="display:none;">
         <div class="modal-content">
-            <button class="close-modal-btn">&times;</button>
-            <h2>AgriClim</h2>
-            <p>Ce projet vise à démocratiser l'accès à la marchandise en mettant en relation des agriculteur qualifiés avec des consomateurs. L'application intègre un chat en temps réel, un système de notation et de paiement sécurisé. L'enjeu était de créer une interface ultra-simple pour surmonter la fracture numérique.</p>
+            <button class="close-modal-btn" aria-label="Fermer">&times;</button>
+            <div class="project-visual visual-green modal-visual"><i class="fas fa-seedling"></i></div>
+            <h2 id="modal-title-1">AgriClim</h2>
+            <p>Ce projet vise à démocratiser l'accès au marché en mettant en relation des agriculteurs qualifiés avec des consommateurs. L'application intègre un chat en temps réel, un système de notation et un paiement sécurisé. L'enjeu était de créer une interface ultra-simple pour surmonter la fracture numérique.</p>
             <div class="project-links">
                 <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Visiter le site</a>
-                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-            </div>
-        </div>
-    </div>
-    
-    <div id="project-detail-2" class="project-detail-modal" style="display:none;">
-         <div class="modal-content">
-            <button class="close-modal-btn">&times;</button>
-            <h2>Genbook</h2>
-            <p>L'objectif était de fournir une app de generation de document synchroniser aux entrepreneurs.</p>
-            <div class="project-links">
-                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Essayer la démo</a>
-                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
+                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
             </div>
         </div>
     </div>
 
-    <div id="project-detail-3" class="project-detail-modal" style="display:none;">
+    <div id="project-detail-2" class="project-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-2" style="display:none;">
         <div class="modal-content">
-            <button class="close-modal-btn">&times;</button>
-            <img src="https://via.placeholder.com/800x400/9b59b6/ffffff?text=MassaVote" alt="Projet MassaVote">
-            <h2>MassaVote - Vote Décentralisé</h2>
-            <p>Ce projet est une preuve de concept démontrant la puissance de la blockchain Massa pour des applications citoyennes. J'ai développé des smart contracts pour gérer les propositions de vote et l'enregistrement des votes de manière immuable. L'interface, sobrement réalisée en Vue.js, interagit directement avec la blockchain. C'est une exploration passionnante du Web3 appliqué à des problématiques concrètes de gouvernance.</p>
+            <button class="close-modal-btn" aria-label="Fermer">&times;</button>
+            <div class="project-visual visual-blue modal-visual"><i class="fas fa-file-invoice"></i></div>
+            <h2 id="modal-title-2">Genbook</h2>
+            <p>L'objectif était de fournir une application de génération de documents synchronisée pour les entrepreneurs.</p>
+            <div class="project-links">
+                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Essayer la démo</a>
+                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-detail-3" class="project-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-3" style="display:none;">
+        <div class="modal-content">
+            <button class="close-modal-btn" aria-label="Fermer">&times;</button>
+            <div class="project-visual visual-purple modal-visual"><i class="fas fa-square-poll-vertical"></i></div>
+            <h2 id="modal-title-3">MassaVote - Vote Décentralisé</h2>
+            <p>Ce projet est une preuve de concept démontrant la puissance de la blockchain Massa pour des applications citoyennes. J'ai développé des smart contracts pour gérer les propositions de vote et l'enregistrement des votes de manière immuable. L'interface, réalisée en Vue.js, interagit directement avec la blockchain. C'est une exploration passionnante du Web3 appliqué à des problématiques concrètes de gouvernance.</p>
             <div class="project-links">
                 <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Voir le Proof of Concept</a>
-                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
+                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
             </div>
         </div>
     </div>
@@ -213,10 +222,9 @@
             <a href="https://github.com/freddychoudja" target="_blank" aria-label="Profil GitHub de Freddy Choudja"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/freddy-choudja-2a662a330/" target="_blank" aria-label="Profil LinkedIn de Freddy Choudja"><i class="fab fa-linkedin"></i></a>
         </div>
-        <p>&copy; 2024 Freddy Choudja. </p>
+        <p>&copy; 2024 Freddy Choudja.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
