@@ -1,239 +1,151 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Freddy Choudja, développeur Full-Stack & entrepreneur spécialisé en Flutter, React, Node.js et Blockchain (Massa), créant des solutions pour la transformation numérique en Afrique.">
-    <meta name="keywords" content="freddy choudja, développeur, full-stack, entrepreneur, flutter, react, node.js, blockchain, massa, afrique, cameroun, solutions numériques">
+    <meta name="description" content="Freddy Choudja, développeur web et mobile. Frontend, backend, automatisation et déploiement de produits numériques.">
+    <meta name="keywords" content="Freddy Choudja, développeur web, frontend, backend, Flutter, React Native, Node.js, automatisation, Cameroun">
     <meta name="author" content="Freddy Choudja">
-    <title>Freddy Choudja - Architecte de Solutions Numériques</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>Freddy Choudja — Développeur Web & Mobile</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- Favicon personnalisé "FC" -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236366f1'%3E%3C/rect%3E%3Ctext x='50' y='50' font-size='46' fill='white' text-anchor='middle' dy='.35em' font-family='Arial, sans-serif' font-weight='700'%3EFC%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23238636'/%3E%3Ctext x='50' y='50' font-size='46' fill='white' text-anchor='middle' dy='.35em' font-family='Arial,sans-serif' font-weight='700'%3EFC%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-    <div class="bg-grid" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+    <div class="page-grid" aria-hidden="true"></div>
 
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#hero" aria-label="Retour à l'accueil">
-                    <span class="logo-mark">FC</span>
-                </a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Navigation principale">
+            <a class="brand" href="#top" aria-label="Retour en haut de page"><span>FC</span> Freddy Choudja</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+            <div id="nav-links" class="nav-links">
+                <a href="#about">À propos</a>
+                <a href="#skills">Expertise</a>
+                <a href="#projects">Projets</a>
+                <a href="#community">Communauté</a>
+                <a href="album.html">Album</a>
+                <a href="#credentials">Reconnaissances</a>
+                <a class="nav-contact" href="#contact">Me contacter <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
-            <ul>
-                <li><a href="#hero">Accueil</a></li>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-            </ul>
-            <a href="#contact" class="btn btn-sm nav-cta">Me contacter</a>
-        </div>
-    </nav>
-
-    <header id="hero" class="hero">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="badge">
-            <span class="badge-dot"></span>
-            Disponible pour des missions freelance
-        </div>
-        <h1>Freddy Choudja</h1>
-        <p class="subtitle">Architecte de Solutions Numériques <span class="dot-sep">·</span> Entrepreneur Tech</p>
-        <p class="hero-desc">Je conçois des écosystèmes web et blockchain sur Massa pour catalyser une innovation numérique durable, du Cameroun au reste du monde.</p>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">Explorer mes réalisations</a>
-            <a href="#contact" class="btn btn-secondary">Discutons de votre idée</a>
-        </div>
+        </nav>
     </header>
 
-    <main>
-        <section id="about" class="fade-in-section">
-            <div class="container">
-                <p class="kicker">À propos</p>
-                <h2>Mon Parcours, Ma Vision</h2>
-                <div class="about-content">
-                    <img src="assets/images/fred.jpg" alt="Photo de profil de Freddy Choudja">
-                    <div>
-                        <p>En tant que développeur et entrepreneur camerounais, ma passion ne se limite pas au code ; elle est ancrée dans la conviction que la technologie est le plus puissant levier pour le changement. Je me spécialise dans la création d'applications robustes et centrées sur l'utilisateur.</p>
-                        <p>Mon objectif est de traduire les défis locaux en opportunités numériques. Chaque projet est une mission pour renforcer l'éducation, promouvoir la durabilité et accélérer la transformation digitale sur le continent. Je crois en un avenir où l'innovation locale redéfinit les standards mondiaux.</p>
-                    </div>
+    <main id="top">
+        <section class="hero container">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span></span> Disponible pour collaborer</p>
+                <h1>Je construis des produits <em>web et mobile</em> qui fonctionnent.</h1>
+                <p class="hero-text">Développeur basé au Cameroun, j'interviens sur l'interface, le backend, l'automatisation et la mise en ligne de produits numériques.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Voir mes réalisations <i class="fas fa-arrow-down"></i></a>
+                    <a class="button button-ghost" href="https://wa.me/237691089920" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Échanger sur WhatsApp</a>
                 </div>
-                <div class="github-activity">
-                    <p class="github-activity-label">Activité GitHub <span>@freddychoudja</span></p>
-                    <div class="github-chart-wrapper">
-                        <img src="https://ghchart.rshah.org/6366f1/freddychoudja" alt="Calendrier des contributions GitHub de freddychoudja" class="github-chart" loading="lazy">
-                    </div>
+                <div class="hero-proof">
+                    <a href="https://github.com/freddychoudja" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> @freddychoudja</a>
+                    <span></span>
+                    <a href="https://committers.top/cameroon/freddychoudja" target="_blank" rel="noopener noreferrer">Top 16 GitHub Cameroun</a>
+                </div>
+            </div>
+
+            <div class="automation-panel reveal" aria-label="Schéma d'un système d'automatisation">
+                <div class="panel-caption"><span class="pulse"></span> SYSTÈME EN LIGNE</div>
+                <svg class="flow-lines" viewBox="0 0 530 360" fill="none" aria-hidden="true">
+                    <path d="M266 181 L112 78 M266 181 L112 284 M266 181 L420 78 M266 181 L420 284" />
+                </svg>
+                <span class="flow-dot dot-a" aria-hidden="true"></span><span class="flow-dot dot-b" aria-hidden="true"></span>
+                <span class="flow-dot dot-c" aria-hidden="true"></span><span class="flow-dot dot-d" aria-hidden="true"></span>
+                <div class="service service-whatsapp"><i class="fab fa-whatsapp"></i><div><b>WhatsApp</b><small>Notifications</small></div></div>
+                <div class="service service-telegram"><i class="fab fa-telegram-plane"></i><div><b>Telegram</b><small>Alertes</small></div></div>
+                <div class="engine"><i class="fas fa-microchip"></i><b>Moteur<br>d'automatisation</b><small>ACTIF</small></div>
+                <div class="service service-github"><i class="fab fa-github"></i><div><b>GitHub Actions</b><small>Workflow CI/CD</small></div></div>
+                <div class="service service-scraper"><i class="fas fa-spider"></i><div><b>Scraper</b><small>Collecte de données</small></div></div>
+            </div>
+        </section>
+
+        <section class="metrics container" aria-label="Repères professionnels">
+            <div><strong>06</strong><span>produits présentés</span></div>
+            <div><strong>35</strong><span>dépôts publics GitHub</span></div>
+            <div><strong>Top 16</strong><span>contributeurs GitHub au Cameroun</span></div>
+            <div><strong>07</strong><span>badges vérifiables Credly</span></div>
+        </section>
+
+        <section id="about" class="section container split-section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">01 — À propos</p>
+                <h2>Du besoin métier au produit mis en ligne.</h2>
+            </div>
+            <div class="about-body reveal">
+                <p class="lead">Je suis Freddy Choudja, développeur web et mobile. Je transforme des besoins concrets en interfaces simples, services fiables et fonctionnalités prêtes à être utilisées.</p>
+                <p>Ma pratique couvre le frontend, le backend, l'intégration de services et le déploiement. Je travaille aussi sur l'automatisation de tâches avec des bots et des workflows CI/CD.</p>
+                <div class="about-links">
+                    <a href="https://github.com/freddychoudja" target="_blank" rel="noopener noreferrer">Explorer mon GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://www.linkedin.com/in/freddy-choudja-2a662a330/" target="_blank" rel="noopener noreferrer">Me retrouver sur LinkedIn <i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="fade-in-section">
+        <section id="skills" class="section section-tint">
             <div class="container">
-                <p class="kicker">Expertise</p>
-                <h2>Mes Pôles d'Expertise</h2>
+                <div class="section-heading heading-row reveal">
+                    <div><p class="eyebrow">02 — Expertise</p><h2>Une approche produit, avec une base technique solide.</h2></div>
+                    <p>Je relie les écrans, les services et les automatisations nécessaires à une expérience cohérente.</p>
+                </div>
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-                        <h3>Développement Mobile</h3>
-                        <p>Création d'applications cross-platform natives, performantes et fluides avec Flutter.</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-bullhorn"></i></div>
-                        <h3>Marketing Digital</h3>
-                        <p>Promouvoir l'identité numérique des entreprises et entrepreneurs.</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-cubes"></i></div>
-                        <h3>Blockchain &amp; Web3</h3>
-                        <p>Conception d'applications décentralisées (dApps) pour plus de transparence et de sécurité.</p>
-                        <span class="skill-tag"><strong>Écosystème :</strong> Massa, Smart Contracts</span>
-                    </div>
+                    <article class="skill-card reveal"><span class="skill-number">01</span><i class="fas fa-laptop-code"></i><h3>Frontend</h3><p>Interfaces web responsive, intégration UI et expériences utilisateur fluides.</p><ul><li>React.js</li><li>Vite</li><li>Vue.js</li><li>Three.js</li></ul></article>
+                    <article class="skill-card reveal"><span class="skill-number">02</span><i class="fas fa-server"></i><h3>Backend & données</h3><p>Logique applicative, services, API et gestion de données pour produits web.</p><ul><li>Node.js & Express</li><li>Java & Python</li><li>SQL & SQLite</li><li>PostgreSQL</li></ul></article>
+                    <article class="skill-card reveal"><span class="skill-number">03</span><i class="fas fa-mobile-screen-button"></i><h3>Mobile</h3><p>Applications mobiles connectées aux services backend et prêtes à évoluer.</p><ul><li>Flutter</li><li>React Native</li><li>Intégration API</li><li>Publication</li></ul></article>
+                    <article class="skill-card reveal"><span class="skill-number">04</span><i class="fas fa-robot"></i><h3>Automatisation</h3><p>Services récurrents, bots et pipelines de livraison pour gagner en fiabilité.</p><ul><li>Git & GitHub</li><li>GitHub Actions</li><li>Bots WhatsApp & Telegram</li><li>Scraping</li></ul></article>
                 </div>
             </div>
         </section>
 
-        <section id="certifications" class="fade-in-section">
-            <div class="container">
-                <p class="kicker">Formation</p>
-                <h2>Mes Certifications</h2>
-                <div class="certifications-grid">
-                    <div class="certification-card">
-                        <div class="certification-header">
-                            <i class="fas fa-award"></i>
-                            <h3>Marketing Digital</h3>
-                        </div>
-                        <p>Une formation intensive couvrant les fondamentaux du marketing digital, proposée par Adobe &amp; Meta.</p>
-                        <span class="certification-issuer">Délivré par Coursera</span>
-                        <a href="#" class="btn-certification" target="_blank" rel="noopener noreferrer">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                    <div class="certification-card">
-                        <div class="certification-header">
-                            <i class="fas fa-award"></i>
-                            <h3>Certification Développeur Web</h3>
-                        </div>
-                        <p>Programme complet sur la création d'applications web modernes avec React, Node.js, Laravel et Bootstrap.</p>
-                        <span class="certification-issuer">Délivré par Coursera</span>
-                        <a href="#" class="btn-certification" target="_blank" rel="noopener noreferrer">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+        <section id="projects" class="section container">
+            <div class="section-heading heading-row reveal">
+                <div><p class="eyebrow">03 — Réalisations</p><h2>Des contributions visibles sur des produits réels.</h2></div>
+                <p>Chaque projet indique clairement mon périmètre de contribution.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project project-featured reveal"><div class="project-visual visual-julie"><i class="fas fa-layer-group"></i><span>01</span></div><div class="project-content"><p class="project-type">Application web</p><h3>Julie</h3><p>Participation au développement de l'application, à l'intégration des fonctionnalités et au déploiement en production.</p><div class="project-meta"><span>Frontend</span><span>Backend</span><span>Déploiement</span></div><a href="https://julie-coral.vercel.app/" target="_blank" rel="noopener noreferrer">Visiter le projet <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+                <article class="project project-featured reveal"><div class="project-visual visual-monster"><i class="fas fa-code"></i><span>02</span></div><div class="project-content"><p class="project-type">Plateforme web</p><h3>MyTechMonster</h3><p>Contribution au frontend, au backend, à l'intégration des services et au déploiement de la plateforme.</p><div class="project-meta"><span>Frontend</span><span>Backend</span><span>Intégration</span></div><a href="https://mytechmonster.com/" target="_blank" rel="noopener noreferrer">Visiter le projet <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+                <article class="project reveal"><div class="project-visual visual-wise"><i class="fas fa-mobile-screen"></i><span>03</span></div><div class="project-content"><p class="project-type">Application mobile</p><h3>WiseNkap</h3><p>Participation au développement frontend et backend d'une application mobile publiée sur Google Play.</p><div class="project-meta"><span>Mobile</span><span>Frontend</span><span>Backend</span></div><a href="https://play.google.com/store/apps/details?id=com.wisenkap.app&amp;hl=fr" target="_blank" rel="noopener noreferrer">Voir sur Google Play <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+                <article class="project reveal"><div class="project-visual visual-papyrus"><i class="fas fa-pen-ruler"></i><span>04</span></div><div class="project-content"><p class="project-type">Application web</p><h3>Papyrus</h3><p>Participation à la réalisation de l'interface utilisateur et de l'expérience web du produit.</p><div class="project-meta"><span>Frontend</span><span>UI</span></div><a href="https://papyrus.tech/" target="_blank" rel="noopener noreferrer">Visiter le projet <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+                <article class="project reveal"><div class="project-visual visual-veyrys"><i class="fas fa-database"></i><span>05</span></div><div class="project-content"><p class="project-type">Application web</p><h3>Veyrys</h3><p>Participation au développement des services backend et de la logique applicative de la plateforme.</p><div class="project-meta"><span>Backend</span><span>Services</span></div><a href="https://veyrys.com/" target="_blank" rel="noopener noreferrer">Visiter le projet <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+                <article class="project reveal"><div class="project-visual visual-wisenkap"><i class="fas fa-globe"></i><span>06</span></div><div class="project-content"><p class="project-type">Site web</p><h3>Wisenkap</h3><p>Participation au développement de l'interface web qui accompagne le produit WiseNkap.</p><div class="project-meta"><span>Frontend</span><span>Web</span></div><a href="https://wisenkap.com/" target="_blank" rel="noopener noreferrer">Visiter le projet <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
             </div>
         </section>
 
-        <section id="projects" class="fade-in-section">
-            <div class="container">
-                <p class="kicker">Réalisations</p>
-                <h2>Projets d'Impact</h2>
-                <p class="section-subtitle">Quelques exemples de solutions que j'ai contribué à bâtir.</p>
-                <div class="project-list">
-                    <div class="project-item">
-                        <div class="project-visual visual-green"><i class="fas fa-seedling"></i></div>
-                        <div class="project-info">
-                            <span class="project-tag">Application Web</span>
-                            <h3>AgriClim</h3>
-                            <p>Une application web connectant les acteurs du secteur agricole au Cameroun, offrant un accès simplifié au marché et aux ressources pour optimiser les récoltes.</p>
-                            <a href="#project-detail-1" class="btn-link project-detail-trigger">Voir les détails <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-visual visual-blue"><i class="fas fa-file-invoice"></i></div>
-                        <div class="project-info">
-                            <span class="project-tag">Application Web</span>
-                            <h3>Genbook</h3>
-                            <p>Une interface web permettant aux entrepreneurs de gérer leurs livres et documents de manière intuitive.</p>
-                            <a href="#project-detail-2" class="btn-link project-detail-trigger">Voir les détails <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-visual visual-purple"><i class="fas fa-square-poll-vertical"></i></div>
-                        <div class="project-info">
-                            <span class="project-tag">Blockchain / Web3</span>
-                            <h3>MassaVote</h3>
-                            <p>Un prototype de système de vote sécurisé et transparent, bâti sur la blockchain Massa. Une exploration du potentiel du Web3 pour la gouvernance locale.</p>
-                            <a href="#project-detail-3" class="btn-link project-detail-trigger">Voir les détails <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <section class="section section-tint automation-section">
+            <div class="container automation-copy reveal"><p class="eyebrow">04 — Automatisation</p><h2>Faire communiquer les services, sans interventions répétitives.</h2><p>Je construis des scrapers, des bots WhatsApp et Telegram, ainsi que des workflows GitHub Actions pour collecter des données, diffuser des alertes et automatiser la livraison.</p><div class="automation-tags"><span><i class="fas fa-spider"></i> Collecte de données</span><span><i class="fas fa-bell"></i> Alertes automatisées</span><span><i class="fas fa-code-branch"></i> Pipelines CI/CD</span></div></div>
+        </section>
+
+        <section id="community" class="section container community-section">
+            <div class="section-heading heading-row reveal"><div><p class="eyebrow">05 — Communauté</p><h2>Contribuer aussi en dehors des dépôts.</h2></div><p>Des expériences qui nourrissent mon approche du produit, du leadership et du partage de connaissances.</p></div>
+            <div class="community-grid">
+                <article class="community-card reveal"><div class="community-icon"><i class="fab fa-aws"></i></div><p class="community-type">Leadership étudiant</p><h3>AWS Student Builder Group — UY1</h3><p>Engagement au sein de la communauté AWS de l'Université de Yaoundé I, autour de l'apprentissage du cloud et de la collaboration entre étudiants.</p></article>
+                <article class="community-card reveal"><div class="community-icon"><i class="fas fa-trophy"></i></div><p class="community-type">Entrepreneuriat</p><h3>Hult Prize</h3><p>Deputy Campus Director : contribution à l'animation de l'initiative entrepreneuriale et à l'accompagnement des porteurs de projets sur le campus.</p></article>
+                <article class="community-card community-card-image reveal"><img src="10000codeurs.jpeg" alt="Affiche de l'intervention de Freddy Choudja au Forum international 10 000 Codeurs" loading="lazy"><p class="community-type">Prise de parole</p><h3>10 000 Codeurs — Forum international</h3><p>Intervenant lors du forum international, pour partager une expérience, des apprentissages et une vision concrète du numérique.</p></article>
+                <article class="community-card community-card-image reveal"><img src="Photo_1761507336140.jpg" alt="Freddy Choudja lors d'un atelier DevFest Yaoundé" loading="lazy"><p class="community-type">Écosystème tech</p><h3>DevFest Yaoundé &amp; EnCode Africa</h3><p>Participation aux rendez-vous de la communauté tech, aux échanges de pratiques et à la découverte des évolutions de l'écosystème.</p><a class="community-album-link" href="album.html">Voir l'album <i class="fas fa-arrow-up-right-from-square"></i></a></article>
             </div>
         </section>
 
-        <section id="contact" class="fade-in-section">
-            <div class="container">
-                <p class="kicker">Contact</p>
-                <h2>Prêt à construire le futur ?</h2>
-                <p class="section-subtitle">Que ce soit pour une collaboration, un projet ambitieux ou simplement pour échanger, je suis à votre écoute.</p>
-                <form id="contact-form" class="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required placeholder="Votre Nom">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder="Votre Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required placeholder="Bonjour Freddy, je souhaiterais discuter de..."></textarea>
-                    </div>
-                    <button type="submit" class="btn">Envoyer le message</button>
-                </form>
+        <section id="credentials" class="section container">
+            <div class="section-heading heading-row reveal"><div><p class="eyebrow">06 — Reconnaissances</p><h2>Des acquis vérifiables.</h2></div><a class="text-link" href="https://www.credly.com/users/freddy-choudja/" target="_blank" rel="noopener noreferrer">Voir le profil Credly <i class="fas fa-arrow-up-right-from-square"></i></a></div>
+            <div class="badges-grid">
+                <a class="badge reveal" href="https://www.credly.com/badges/ebc5eba1-b40f-4203-9876-93239e736239" target="_blank" rel="noopener noreferrer"><img src="https://images.credly.com/images/94475512-f247-408f-9809-9e1f93c60c18/blob" alt="AWS SBG Core Team Member"><span>AWS SBG Core Team Member</span><small>AWS Community · 2026</small></a>
+                <a class="badge reveal" href="https://www.credly.com/badges/9a8d0c0c-850b-4883-b73d-57fa8f0d13a9" target="_blank" rel="noopener noreferrer"><img src="https://images.credly.com/images/346dd316-2bda-4465-a6d8-537b3ffa2920/blob" alt="AWS Student Community Day Participant"><span>AWS Student Community Day Participant</span><small>AWS Community · 2026</small></a>
+                <a class="badge reveal" href="https://www.credly.com/badges/fd312fbe-c83c-44d7-85a1-405f2f9d67f7" target="_blank" rel="noopener noreferrer"><img src="https://images.credly.com/images/68fdcd60-3f31-4a24-b87a-90110ab11ee9/blob" alt="AWS Cloud Club Core Team"><span>AWS Cloud Club Core Team</span><small>AWS Community · 2026</small></a>
+                <a class="badge reveal" href="https://www.credly.com/badges/8e583a73-7c31-47f7-9e1f-4716fcfd9384" target="_blank" rel="noopener noreferrer"><img src="https://images.credly.com/images/9da91d2f-91b8-4c4d-91bd-effe06d61721/blob" alt="Adobe Graphic Designer Professional Certificate"><span>Adobe Graphic Designer</span><small>Coursera · 2025</small></a>
+                <a class="badge reveal" href="https://www.credly.com/badges/479b00b9-30ad-4f3f-b11f-bd7e514ce1e9" target="_blank" rel="noopener noreferrer"><img src="https://images.credly.com/images/43e5ae88-dfe1-412c-9c78-e8c6491bebe7/image.png" alt="Developing Websites and Front-Ends with Bootstrap"><span>Websites & Front-Ends with Bootstrap</span><small>Coursera · 2025</small></a>
+                <a class="badge reveal" href="https://www.credly.com/badges/9fb99fd9-8219-4467-a179-979f421f9bb7" target="_blank" rel="noopener noreferrer"><img src="https://images.credly.com/images/493f105f-cbb6-4987-8278-f64e52dad390/blob" alt="Adobe Marketing Specialist Professional Certificate"><span>Adobe Marketing Specialist</span><small>Coursera · 2025</small></a>
+                <a class="badge reveal" href="https://www.credly.com/badges/3c489b1d-b8fb-4925-ba29-15e1d2ea1d83" target="_blank" rel="noopener noreferrer"><img src="https://images.credly.com/images/6abd5c40-4663-4c4c-ab4e-ea4a86269db6/image.png" alt="Product Management Essentials"><span>Product Management Essentials</span><small>Coursera · 2025</small></a>
             </div>
         </section>
+
+        <section id="contact" class="contact-section"><div class="container contact-inner reveal"><p class="eyebrow">07 — Contact</p><h2>Une idée à transformer<br>en produit ?</h2><p>Parlons de votre besoin, de la première fonctionnalité à livrer et de la meilleure façon de la mettre en ligne.</p><div class="contact-actions"><a class="button button-primary" href="https://wa.me/237691089920" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> M'écrire sur WhatsApp</a><a class="button button-ghost" href="https://www.linkedin.com/in/freddy-choudja-2a662a330/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></div></div></section>
     </main>
 
-    <!-- Modals pour les détails des projets -->
-    <div id="project-detail-1" class="project-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-1" style="display:none;">
-        <div class="modal-content">
-            <button class="close-modal-btn" aria-label="Fermer">&times;</button>
-            <div class="project-visual visual-green modal-visual"><i class="fas fa-seedling"></i></div>
-            <h2 id="modal-title-1">AgriClim</h2>
-            <p>Ce projet vise à démocratiser l'accès au marché en mettant en relation des agriculteurs qualifiés avec des consommateurs. L'application intègre un chat en temps réel, un système de notation et un paiement sécurisé. L'enjeu était de créer une interface ultra-simple pour surmonter la fracture numérique.</p>
-            <div class="project-links">
-                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Visiter le site</a>
-                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="project-detail-2" class="project-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-2" style="display:none;">
-        <div class="modal-content">
-            <button class="close-modal-btn" aria-label="Fermer">&times;</button>
-            <div class="project-visual visual-blue modal-visual"><i class="fas fa-file-invoice"></i></div>
-            <h2 id="modal-title-2">Genbook</h2>
-            <p>L'objectif était de fournir une application de génération de documents synchronisée pour les entrepreneurs.</p>
-            <div class="project-links">
-                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Essayer la démo</a>
-                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="project-detail-3" class="project-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-3" style="display:none;">
-        <div class="modal-content">
-            <button class="close-modal-btn" aria-label="Fermer">&times;</button>
-            <div class="project-visual visual-purple modal-visual"><i class="fas fa-square-poll-vertical"></i></div>
-            <h2 id="modal-title-3">MassaVote - Vote Décentralisé</h2>
-            <p>Ce projet est une preuve de concept démontrant la puissance de la blockchain Massa pour des applications citoyennes. J'ai développé des smart contracts pour gérer les propositions de vote et l'enregistrement des votes de manière immuable. L'interface, réalisée en Vue.js, interagit directement avec la blockchain. C'est une exploration passionnante du Web3 appliqué à des problématiques concrètes de gouvernance.</p>
-            <div class="project-links">
-                <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Voir le Proof of Concept</a>
-                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/freddychoudja" target="_blank" aria-label="Profil GitHub de Freddy Choudja"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/freddy-choudja-2a662a330/" target="_blank" aria-label="Profil LinkedIn de Freddy Choudja"><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/237691089920" target="_blank" rel="noopener noreferrer" aria-label="Contacter Freddy Choudja sur WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <p>&copy; 2024 Freddy Choudja.</p>
-    </footer>
-
+    <footer class="footer container"><a class="brand" href="#top"><span>FC</span> Freddy Choudja</a><p>Développeur web &amp; mobile · Cameroun</p><div><a href="https://github.com/freddychoudja" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/freddy-choudja-2a662a330/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a><a href="https://wa.me/237691089920" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
